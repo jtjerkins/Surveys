@@ -1,0 +1,237 @@
+{
+	"NamedCategorizations":
+	[
+		{
+			"Name": "PROMIS Never-Sometimes-Always",
+			"Data": [
+				{ "Value": "1", "Label": "Never" },
+				{ "Value": "2", "Label": "Rarely" },
+				{ "Value": "3", "Label": "Sometimes" },
+				{ "Value": "4", "Label": "Often" },
+				{ "Value": "5", "Label": "Always" }
+			]
+		},
+		{
+			"Name": "PROMIS Completely-NotAtAll DESC",
+			"Data": [
+				{ "Value": "5", "Label": "Completely" },
+				{ "Value": "4", "Label": "Mostly" },
+				{ "Value": "3", "Label": "Moderately" },
+				{ "Value": "2", "Label": "A little" },
+				{ "Value": "1", "Label": "Not at all" }
+			]
+		},
+		{
+			"Name": "PROMIS None-VerySevere",
+			"Data": [
+				{ "Value": "1", "Label": "None" },
+				{ "Value": "2", "Label": "Mild" },
+				{ "Value": "3", "Label": "Moderate" },
+				{ "Value": "4", "Label": "Severe" },
+				{ "Value": "5", "Label": "Very severe" }
+			]
+		},
+		{
+			"Name": "PROMIS Excellent-Poor DESC",
+			"Data": [
+				{ "Value": "5", "Label": "Excellent" },
+				{ "Value": "4", "Label": "Very good" },
+				{ "Value": "3", "Label": "Good" },
+				{ "Value": "2", "Label": "Fair" },
+				{ "Value": "1", "Label": "Poor" }
+			]
+		}
+	],
+	"Items": [
+		{
+			"__ClassName": "ItemGroup",
+			"Section": "PROMIS Global Health SF10 v1.1",
+			"Items": [
+				{
+					"CategorizationName": "PROMIS Excellent-Poor DESC",
+					"Items": [
+						{
+							"Items": [
+								{
+									"VarName": "Global01",
+									"IsRequired": 1,
+									"DisplayLabel": "In general, would you say your health is:",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "Global02",
+									"IsRequired": 1,
+									"DisplayLabel": "In general, would you say your quality of life is:",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "Global03",
+									"IsRequired": 1,
+									"DisplayLabel": "In general, how would you rate your physical health?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "Global04",
+									"IsRequired": 1,
+									"DisplayLabel": "In general, how would you rate your mental health, including your mood and your ability to think?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "Global05",
+									"IsRequired": 1,
+									"DisplayLabel": "In general, how would you rate your satisfaction with your social activities and relationships?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "Global09",
+									"IsRequired": 1,
+									"DisplayLabel": "In general, please rate how well you carry out your usual social activities and roles. (This includes activities at home, at work and in your community, and responsibilities as a parent, child, spouse, employee, friend, etc.)",
+									"__ClassName": "LikertRadioResponse"
+								}
+							],
+							"__ClassName": "ItemGroup"
+						}
+					],
+					"CombineHtmlForGroup": 1,
+					"__ClassName": "LikertGroup"
+				},
+				{
+					"Items": [
+						{
+							"CategorizationName": "PROMIS Completely-NotAtAll DESC",
+							"Items": [
+								{
+									"Items": [
+										{
+											"VarName": "Global06",
+											"IsRequired": 1,
+											"DisplayLabel": "To what extent are you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair?",
+											"__ClassName": "LikertRadioResponse"
+										}
+									],
+									"__ClassName": "ItemGroup"
+								}
+							],
+							"__ClassName": "LikertGroup"
+						},
+						{
+							"CategorizationName": "PROMIS Never-Sometimes-Always",
+							"Items": [
+								{
+									"Items": [
+										{
+											"VarName": "Global10",
+											"IsRequired": 1,
+											"DisplayLabel": "How often have you been bothered by emotional problems such as feeling anxious, depressed or irritable?",
+											"__ClassName": "LikertRadioResponse"
+										}
+									],
+									"__ClassName": "ItemGroup"
+								}
+							],
+							"HeaderItem": {
+								"DisplayLabel": "<label class=\"control-label\">In the past 7 days...<\/label>",
+								"TagName": "span",
+								"__ClassName": "DisplayItem"
+							},
+							"__ClassName": "LikertGroup"
+						},
+						{
+							"CategorizationName": "PROMIS None-VerySevere",
+							"Items": [
+								{
+									"Items": [
+										{
+											"VarName": "Global08",
+											"IsRequired": 1,
+											"DisplayLabel": "How would you rate your fatigue on average?",
+											"__ClassName": "LikertRadioResponse"
+										}
+									],
+									"__ClassName": "ItemGroup"
+								}
+							],
+							"HeaderItem": {
+								"DisplayLabel": "<label class=\"control-label\">In the past 7 days...<\/label>",
+								"TagName": "span",
+								"__ClassName": "DisplayItem"
+							},
+							"__ClassName": "LikertGroup"
+						}
+					],
+					"__ClassName": "ItemGroup"
+				},
+				{
+					"Items": [
+						{
+							"CategorizationData": [
+								{
+									"Value": "0",
+									"Label": "0 <br>No <br>Pain"
+								},
+								{
+									"Value": "1",
+									"Label": "1"
+								},
+								{
+									"Value": "2",
+									"Label": "2"
+								},
+								{
+									"Value": "3",
+									"Label": "3"
+								},
+								{
+									"Value": "4",
+									"Label": "4"
+								},
+								{
+									"Value": "5",
+									"Label": "5"
+								},
+								{
+									"Value": "6",
+									"Label": "6"
+								},
+								{
+									"Value": "7",
+									"Label": "7"
+								},
+								{
+									"Value": "8",
+									"Label": "8"
+								},
+								{
+									"Value": "9",
+									"Label": "9"
+								},
+								{
+									"Value": "10",
+									"Label": "10 <br>Worst <br>imaginable <br>pain"
+								}
+							],
+							"ShowOptionsBelow": true,
+							"Items": [
+								{
+									"VarName": "Global07",
+									"VarLabel": "Pain intensity, PROMIS Global07",
+									"IsRequired": 1,
+									"DisplayLabel": "How would you rate your pain on average?",
+									"__ClassName": "LikertRadioResponse"
+								}
+							],
+							"HeaderItem": {
+								"DisplayLabel": "<label class=\"control-label\">In the past 7 days...<\/label>",
+								"TagName": "span",
+								"__ClassName": "DisplayItem"
+							},
+							"__ClassName": "LikertGroup"
+						}
+					],
+					"__ClassName": "ItemGroup"
+				}
+			]
+		}
+	],
+	"__ClassName": "RootGroup"
+}

@@ -1,0 +1,1017 @@
+{
+	"NamedCategorizations":
+	[
+	],
+	"Items": [
+		{
+			"__ClassName": "ItemGroup",
+			"Section": "IPAQ",
+			"Items": [
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "1.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">We are interested in finding out about the kinds of physical activities that people do as part of their everyday lives. The questions will ask you about the time you spent being physically active in the <u><b>last 7 days</b></u>. Please answer each question even if you do not consider yourself to be an active person. Please think about the activities you do at work, as part of your house and yard work, to get from place to place, and in your spare time for recreation, exercise or sport.<br><br>Think about all the <b>vigorous</b> and <b>moderate</b> activities that you did in the <b><u>last 7 days</u></b>. <b>Vigorous</b> physical activities refer to activities that take hard physical effort and make you breathe much harder than normal. <b>Moderate</b> activities refer to activities that take moderate physical effort and make you breathe somewhat harder than normal.<br><br><b><i>PART 1: JOB-RELATED PHYSICAL ACTIVITY</i></b><br><br>The first section is about your work. This includes paid jobs, farming, volunteer work, course work, and any other unpaid work that you did outside your home. Do not include unpaid work you might do around your home, like housework, yard work, general maintenance, and caring for your family. These are asked in Part 3.<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "Do you currently have a job or do any unpaid work outside your home?",
+							"VarName": "IPAQ_01",
+							"VarLabel": "IPAQ-work outside home?",
+							"CategorizationData": [
+								{ "Value": "1", "Label": "Yes" },
+								{ "Value": "0", "Label": "No" }
+							],
+							"__ClassName": "RadioResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "2.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">The next questions are about all the physical activity you did in the <b>last 7 days</b> as part of your paid or unpaid work. This does not include traveling to and from work.<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "During the <b>last 7 days</b>, on how many days did you do <b>vigorous</b> physical activities like heavy lifting, digging, heavy construction, or climbing up stairs <b>as part of your work</b>? Think about only those physical activities that you did for at least 10 minutes at a time.",
+							"VarLabel": "IPAQ-work-vigorous activity-Number of days in last 7 days",
+							"VarName": "IPAQ_02",
+							"CategorizationData": [
+								{ "Value": "1", "Label": "1 day" },
+								{ "Value": "2", "Label": "2 days" },
+								{ "Value": "3", "Label": "3 days" },
+								{ "Value": "4", "Label": "4 days" },
+								{ "Value": "5", "Label": "5 days" },
+								{ "Value": "6", "Label": "6 days" },
+								{ "Value": "7", "Label": "7 days" },
+								{ "Value": "0", "Label": "No vigorous job-related physical activity" }
+							],
+							"ValidMissing": [
+								{ "VarName": "IPAQ_01", "VarValue": 0 }
+							],
+							"__ClassName": "RadioResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "3.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">How much time did you usually spend on one of those days doing <b>vigorous</b> physical activities as part of your work?<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "Hours per day",
+							"VarName": "IPAQ_03_H",
+							"VarLabel": "IPAQ-work-vigorous activity-Hours per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_02", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 24,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						},
+						{
+							"DisplayLabel": "Minutes per day",
+							"VarName": "IPAQ_03_Min",
+							"VarLabel": "IPAQ-work-vigorous activity-Minutes per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_02", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 60,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "4.",
+					"Items": [
+						{
+							"DisplayLabel": "Again, think about only those physical activities that you did for at least 10 minutes at a time. During the <b>last 7 days</b>, on how many days did you do <b>moderate</b> physical activities like heavy lifting, digging, heavy construction, or climbing up stairs <b>as part of your work</b>? Think about only those physical activities that you did for at least 10 minutes at a time.",
+							"VarName": "IPAQ_04",
+							"VarLabel": "IPAQ-work-moderate activity-Number of days in last 7 days",
+							"CategorizationData": [
+								{ "Value": "1", "Label": "1 day" },
+								{ "Value": "2", "Label": "2 days" },
+								{ "Value": "3", "Label": "3 days" },
+								{ "Value": "4", "Label": "4 days" },
+								{ "Value": "5", "Label": "5 days" },
+								{ "Value": "6", "Label": "6 days" },
+								{ "Value": "7", "Label": "7 days" },
+								{ "Value": "0", "Label": "No moderate job-related physical activity" }
+							],
+							"ValidMissing": [
+								{ "VarName": "IPAQ_01", "VarValue": 0 }
+							],
+							"__ClassName": "RadioResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "5.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">How much time did you usually spend on one of those days doing <b>moderate</b> physical activities as part of your work?<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "Hours per day",
+							"VarName": "IPAQ_05_H",
+							"VarLabel": "IPAQ-work-moderate activity-Hours per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_04", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 24,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						},
+						{
+							"DisplayLabel": "Minutes per day",
+							"VarName": "IPAQ_05_Min",
+							"VarLabel": "IPAQ-work-moderate activity-Minutes per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_04", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 60,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						}
+					]
+				},
+
+				
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "6.",
+					"Items": [
+						{
+							"DisplayLabel": "During the <b>last 7 days</b>, on how many days did you <b>walk</b> for at least 10 minutes at a time <b>as part of your work</b>? Please do not count any walking you did to travel to or from work.",
+							"VarName": "IPAQ_06",
+							"VarLabel": "IPAQ-work-walk-Number of days in last 7 days",
+							"CategorizationData": [
+								{ "Value": "1", "Label": "1 day" },
+								{ "Value": "2", "Label": "2 days" },
+								{ "Value": "3", "Label": "3 days" },
+								{ "Value": "4", "Label": "4 days" },
+								{ "Value": "5", "Label": "5 days" },
+								{ "Value": "6", "Label": "6 days" },
+								{ "Value": "7", "Label": "7 days" },
+								{ "Value": "0", "Label": "No job-related walking" }
+							],
+							"ValidMissing": [
+								{ "VarName": "IPAQ_01", "VarValue": 0 }
+							],
+							"__ClassName": "RadioResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "7.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">How much time did you usually spend on one of those days <b>walking</b> as part of your work?<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "Hours per day",
+							"VarName": "IPAQ_07_H",
+							"VarLabel": "IPAQ-work-walk-Hours per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_06", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 24,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						},
+						{
+							"DisplayLabel": "Minutes per day",
+							"VarName": "IPAQ_07_Min",
+							"VarLabel": "IPAQ-work-walk-Minutes per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_06", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 60,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "8.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\"><b><i>PART 2: TRANSPORTATION PHYSICAL ACTIVITY</i></b><br><br>These questions are about how you traveled from place to place, including to places like work, stores, movies, and so on.<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "During the <b>last 7 days</b>, on how many days did you <b>travel in a motor vehicle</b> like a train, bus, car, or tram?",
+							"VarName": "IPAQ_08",
+							"VarLabel": "IPAQ-transportation-traveling-Number of days in last 7 days",
+							"CategorizationData": [
+								{ "Value": "1", "Label": "1 day" },
+								{ "Value": "2", "Label": "2 days" },
+								{ "Value": "3", "Label": "3 days" },
+								{ "Value": "4", "Label": "4 days" },
+								{ "Value": "5", "Label": "5 days" },
+								{ "Value": "6", "Label": "6 days" },
+								{ "Value": "7", "Label": "7 days" },
+								{ "Value": "0", "Label": "No traveling in a motor vehicle" }
+							],
+							"__ClassName": "RadioResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "9.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">How much time did you usually spend on one of those days <b>traveling</b> in a train, bus, car, tram, or other kind of motor vehicle?<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "Hours per day",
+							"VarName": "IPAQ_09_H",
+							"VarLabel": "IPAQ-transportation-traveling-Hours per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_08", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 24,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						},
+						{
+							"DisplayLabel": "Minutes per day",
+							"VarName": "IPAQ_09_Min",
+							"VarLabel": "IPAQ-transportation-traveling-Minutes per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_08", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 60,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "10.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">Now think only about the <b>bicycling</b> and <b>walking</b> you might have done to travel to and from work, to do errands, or to go from place to place.<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "During the <b>last 7 days</b>, on how many days did you <b>bicycle</b> for at least 10 minutes at a time to go <b>from place to place</b>?",
+							"VarName": "IPAQ_10",
+							"VarLabel": "IPAQ-transportation-cycling-Number of days in last 7 days",
+							"CategorizationData": [
+								{ "Value": "1", "Label": "1 day" },
+								{ "Value": "2", "Label": "2 days" },
+								{ "Value": "3", "Label": "3 days" },
+								{ "Value": "4", "Label": "4 days" },
+								{ "Value": "5", "Label": "5 days" },
+								{ "Value": "6", "Label": "6 days" },
+								{ "Value": "7", "Label": "7 days" },
+								{ "Value": "0", "Label": "No bicycling from place to place" }
+							],
+							"__ClassName": "RadioResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "11.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">How much time did you usually spend on one of those days to <b>bicycle</b> from place to place?<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "Hours per day",
+							"VarName": "IPAQ_11_H",
+							"VarLabel": "IPAQ-transportation-cycling-Hours per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_10", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 24,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						},
+						{
+							"DisplayLabel": "Minutes per day",
+							"VarName": "IPAQ_11_Min",
+							"VarLabel": "IPAQ-transportation-cycling-Minutes per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_10", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 60,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "12.",
+					"Items": [
+						{
+							"DisplayLabel": "During the <b>last 7 days</b>, on how many days did you <b>walk</b> for at least 10 minutes at a time to go <b>from place to place</b>?",
+							"VarName": "IPAQ_12",
+							"VarLabel": "IPAQ-transportation-walking-Number of days in last 7 days",
+							"CategorizationData": [
+								{ "Value": "1", "Label": "1 day" },
+								{ "Value": "2", "Label": "2 days" },
+								{ "Value": "3", "Label": "3 days" },
+								{ "Value": "4", "Label": "4 days" },
+								{ "Value": "5", "Label": "5 days" },
+								{ "Value": "6", "Label": "6 days" },
+								{ "Value": "7", "Label": "7 days" },
+								{ "Value": "0", "Label": "No walking from place to place" }
+							],
+							"__ClassName": "RadioResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "13.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">How much time did you usually spend on one of those days <b>walking</b> from place to place?<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "Hours per day",
+							"VarName": "IPAQ_13_H",
+							"VarLabel": "IPAQ-transportation-walking-Hours per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_12", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 24,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						},
+						{
+							"DisplayLabel": "Minutes per day",
+							"VarName": "IPAQ_13_Min",
+							"VarLabel": "IPAQ-transportation-walking-Minutes per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_12", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 60,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "14.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\"><b><i>PART 3: HOUSEWORK, HOUSE MAINTENANCE, AND CARING FOR FAMILY</i></b><br><br>This section is about some of the physical activities you might have done in the <b>last 7 days</b> in and around your home, like housework, gardening, yard work, general maintenance work, and caring for your family.<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "Think about only those physical activities that you did for at least 10 minutes at a time. During the <b>last 7 days</b>, on how many days did you do <b>vigorous</b> physical activities like heavy lifting, chopping wood, shoveling snow, or digging <b>in the garden or yard</b>?",
+							"VarName": "IPAQ_14",
+							"VarLabel": "IPAQ-home-vigorous-Number of days in last 7 days",
+							"CategorizationData": [
+								{ "Value": "1", "Label": "1 day" },
+								{ "Value": "2", "Label": "2 days" },
+								{ "Value": "3", "Label": "3 days" },
+								{ "Value": "4", "Label": "4 days" },
+								{ "Value": "5", "Label": "5 days" },
+								{ "Value": "6", "Label": "6 days" },
+								{ "Value": "7", "Label": "7 days" },
+								{ "Value": "0", "Label": "No vigorous activity in garden or yard" }
+							],
+							"__ClassName": "RadioResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "15.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">How much time did you usually spend on one of those days doing <b>vigorous</b> physical activities in the garden or yard?<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "Hours per day",
+							"VarName": "IPAQ_15_H",
+							"VarLabel": "IPAQ-home-vigorous-Hours per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_14", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 24,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						},
+						{
+							"DisplayLabel": "Minutes per day",
+							"VarName": "IPAQ_15_Min",
+							"VarLabel": "IPAQ-home-vigorous-Minutes per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_14", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 60,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "16.",
+					"Items": [
+						{
+							"DisplayLabel": "Think about only those physical activities that you did for at least 10 minutes at a time. During the <b>last 7 days</b>, on how many days did you do <b>moderate</b> physical activities like heavy lifting, chopping wood, shoveling snow, or digging <b>in the garden or yard</b>?",
+							"VarName": "IPAQ_16",
+							"VarLabel": "IPAQ-home-moderate-Number of days in last 7 days",
+							"CategorizationData": [
+								{ "Value": "1", "Label": "1 day" },
+								{ "Value": "2", "Label": "2 days" },
+								{ "Value": "3", "Label": "3 days" },
+								{ "Value": "4", "Label": "4 days" },
+								{ "Value": "5", "Label": "5 days" },
+								{ "Value": "6", "Label": "6 days" },
+								{ "Value": "7", "Label": "7 days" },
+								{ "Value": "0", "Label": "No moderate activity in garden or yard" }
+							],
+							"__ClassName": "RadioResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "17.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">How much time did you usually spend on one of those days doing <b>moderate</b> physical activities in the garden or yard?<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "Hours per day",
+							"VarName": "IPAQ_17_H",
+							"VarLabel": "IPAQ-home-moderate-Hours per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_16", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 24,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						},
+						{
+							"DisplayLabel": "Minutes per day",
+							"VarName": "IPAQ_17_Min",
+							"VarLabel": "IPAQ-home-moderate-Minutes per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_16", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 60,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "18.",
+					"Items": [
+						{
+							"DisplayLabel": "Think about only those physical activities that you did for at least 10 minutes at a time. During the <b>last 7 days</b>, on how many days did you do <b>moderate</b> activities like carrying light loads, washing windows, scrubbing floors and sweeping <b>inside your home</b>?",
+							"VarName": "IPAQ_18",
+							"VarLabel": "IPAQ-home-inside-moderate-Number of days in last 7 days",
+							"CategorizationData": [
+								{ "Value": "1", "Label": "1 day" },
+								{ "Value": "2", "Label": "2 days" },
+								{ "Value": "3", "Label": "3 days" },
+								{ "Value": "4", "Label": "4 days" },
+								{ "Value": "5", "Label": "5 days" },
+								{ "Value": "6", "Label": "6 days" },
+								{ "Value": "7", "Label": "7 days" },
+								{ "Value": "0", "Label": "No moderate activity inside home" }
+							],
+							"__ClassName": "RadioResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "19.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">How much time did you usually spend on one of those days doing <b>moderate</b> physical activities activities inside your home?<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "Hours per day",
+							"VarName": "IPAQ_19_H",
+							"VarLabel": "IPAQ-home-inside-moderate-Hours per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_18", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 24,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						},
+						{
+							"DisplayLabel": "Minutes per day",
+							"VarName": "IPAQ_19_Min",
+							"VarLabel": "IPAQ-home-inside-moderate-Minutes per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_18", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 60,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "20.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\"><b><i>PART 4: RECREATION, SPORT, AND LEISURE-TIME PHYSICAL ACTIVITY</i></b><br><br>This section is about all the physical activities that you did in the <b>last 7 days</b> solely for recreation, sport, exercise or leisure. Please do not include any activities you have already mentioned.<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "Not counting any walking you have already mentioned, during <b>last 7 days</b>, on how many days did you <b>walk</b> for at least 10 minutes at a time <b>in your leisure time</b>?",
+							"VarName": "IPAQ_20",
+							"VarLabel": "IPAQ-recreation-walk-Number of days in last 7 days",
+							"CategorizationData": [
+								{ "Value": "1", "Label": "1 day" },
+								{ "Value": "2", "Label": "2 days" },
+								{ "Value": "3", "Label": "3 days" },
+								{ "Value": "4", "Label": "4 days" },
+								{ "Value": "5", "Label": "5 days" },
+								{ "Value": "6", "Label": "6 days" },
+								{ "Value": "7", "Label": "7 days" },
+								{ "Value": "0", "Label": "No walking in leisure time" }
+							],
+							"__ClassName": "RadioResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "21.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">How much time did you usually spend on one of those days <b>walking</b> in your leisure time?<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "Hours per day",
+							"VarName": "IPAQ_21_H",
+							"VarLabel": "IPAQ-recreation-walk-Hours per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_20", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 24,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						},
+						{
+							"DisplayLabel": "Minutes per day",
+							"VarName": "IPAQ_21_Min",
+							"VarLabel": "IPAQ-recreation-walk-Minutes per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_20", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 60,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "22.",
+					"Items": [
+						{
+							"DisplayLabel": "Think about only those physical activities that you did for at least 10 minutes at a time. During the <b>last 7 days</b>, on how many days did you do <b>vigorous</b> physical activities like aerobics, running, fast bicycling, or fast swimming <b>in your leisure time</b>?",
+							"VarName": "IPAQ_22",
+							"VarLabel": "IPAQ-recreation-vigorous activities-Number of days in last 7 days",
+							"CategorizationData": [
+								{ "Value": "1", "Label": "1 day" },
+								{ "Value": "2", "Label": "2 days" },
+								{ "Value": "3", "Label": "3 days" },
+								{ "Value": "4", "Label": "4 days" },
+								{ "Value": "5", "Label": "5 days" },
+								{ "Value": "6", "Label": "6 days" },
+								{ "Value": "7", "Label": "7 days" },
+								{ "Value": "0", "Label": "No vigorous activity in leisure time" }
+							],
+							"__ClassName": "RadioResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "23.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">How much time did you usually spend on one of those days doing <b>vigorous</b> physical activities in your leisure time?<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "Hours per day",
+							"VarName": "IPAQ_23_H",
+							"VarLabel": "IPAQ-recreation-vigorous activities-Hours per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_22", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 24,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						},
+						{
+							"DisplayLabel": "Minutes per day",
+							"VarName": "IPAQ_23_Min",
+							"VarLabel": "IPAQ-recreation-vigorous activities-Minutes per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_22", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 60,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "24.",
+					"Items": [
+						{
+							"DisplayLabel": "Again, think about only those physical activities that you did for at least 10 minutes at a time. During the <b>last 7 days</b>, on how many days did you do <b>moderate</b> physical activities like bicycling at a regular pace, swimming at a regular pace, and doubles tennis <b>in your leisure time</b>?",
+							"VarName": "IPAQ_24",
+							"VarLabel": "IPAQ-recreation-moderate activities-Number of days in last 7 days",
+							"CategorizationData": [
+								{ "Value": "1", "Label": "1 day" },
+								{ "Value": "2", "Label": "2 days" },
+								{ "Value": "3", "Label": "3 days" },
+								{ "Value": "4", "Label": "4 days" },
+								{ "Value": "5", "Label": "5 days" },
+								{ "Value": "6", "Label": "6 days" },
+								{ "Value": "7", "Label": "7 days" },
+								{ "Value": "0", "Label": "No moderate activity in leisure time" }
+							],
+							"__ClassName": "RadioResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "25.",
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">How much time did you usually spend on one of those days doing <b>moderate</b> physical activities in your leisure time?<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"DisplayLabel": "Hours per day",
+							"VarName": "IPAQ_25_H",
+							"VarLabel": "IPAQ-recreation-moderate activities-Hours per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_24", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 24,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						},
+						{
+							"DisplayLabel": "Minutes per day",
+							"VarName": "IPAQ_25_Min",
+							"VarLabel": "IPAQ-recreation-moderate activities-Minutes per day",
+							"DataCategory": "Numeric",
+							"DataPrecision": 11,
+							"ValidMissing": [
+								{ "VarName": "IPAQ_24", "VarValue": "0" }
+							],
+							"Validations": [
+								{
+									"Min": 0,
+									"Max": 60,
+									"__ClassName": "NumericValidation"
+								}
+							],
+							"__ClassName": "TextResponse"
+						}
+					]
+				},
+				{
+					"__ClassName": "ItemGroup",
+					"CombineHtmlForGroup": 1,
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\"><b><i>PART 5: TIME SPENT SITTING</i></b><br><br>The last questions are about the time you spend sitting while at work, at home, while doing course work and during leisure time. This may include time spent sitting at a desk, visiting friends, reading or sitting or lying down to watch television. Do not include any time spent sitting in a motor vehicle that you have already told me about.<\/label><br><br>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"__ClassName": "ItemGroup",
+							"QuestionNumber": "26.",
+							"Items": [
+								{
+									"DisplayLabel": "<label class=\"control-label\">How much time did you usually spend on one of those days <b>sitting</b> on a <b>weekday</b>?<\/label><br><br>",
+									"TagName": "span",
+									"__ClassName": "DisplayItem"
+								},
+								{
+									"DisplayLabel": "Hours per day",
+									"VarName": "IPAQ_26_H",
+									"VarLabel": "IPAQ-sitting-weekday-Hours per day",
+									"DataCategory": "Numeric",
+									"DataPrecision": 11,
+											"Validations": [
+										{
+											"Min": 0,
+											"Max": 24,
+											"__ClassName": "NumericValidation"
+										}
+									],
+									"__ClassName": "TextResponse"
+								},
+								{
+									"DisplayLabel": "Minutes per day",
+									"VarName": "IPAQ_26_Min",
+									"VarLabel": "IPAQ-sitting-weekday-Minutes per day",
+									"DataCategory": "Numeric",
+									"DataPrecision": 11,
+											"Validations": [
+										{
+											"Min": 0,
+											"Max": 60,
+											"__ClassName": "NumericValidation"
+										}
+									],
+									"__ClassName": "TextResponse"
+								}
+							]
+						},
+						{
+							"__ClassName": "ItemGroup",
+							"QuestionNumber": "27.",
+							"Items": [
+								{
+									"DisplayLabel": "<label class=\"control-label\">How much time did you usually spend on one of those days <b>sitting</b> on a <b>weekend day</b>?<\/label><br><br>",
+									"TagName": "span",
+									"__ClassName": "DisplayItem"
+								},
+								{
+									"DisplayLabel": "Hours per day",
+									"VarName": "IPAQ_27_H",
+									"VarLabel": "IPAQ-sitting-weekend-Hours per day",
+									"DataCategory": "Numeric",
+									"DataPrecision": 11,
+											"Validations": [
+										{
+											"Min": 0,
+											"Max": 24,
+											"__ClassName": "NumericValidation"
+										}
+									],
+									"__ClassName": "TextResponse"
+								},
+								{
+									"DisplayLabel": "Minutes per day",
+									"VarName": "IPAQ_27_Min",
+									"VarLabel": "IPAQ-sitting-weekend-Minutes per day",
+									"DataCategory": "Numeric",
+									"DataPrecision": 11,
+											"Validations": [
+										{
+											"Min": 0,
+											"Max": 60,
+											"__ClassName": "NumericValidation"
+										}
+									],
+									"__ClassName": "TextResponse"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"__ClassName": "RootGroup"
+}

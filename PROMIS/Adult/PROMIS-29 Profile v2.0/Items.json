@@ -1,0 +1,360 @@
+{
+	"NamedCategorizations":
+	[
+		{
+			"Name": "PROMIS WithoutDifficulty-Unable",
+			"Data":
+			[
+				{ "Value": "5", "Label": "Without any difficulty" },
+				{ "Value": "4", "Label": "With a little difficulty" },
+				{ "Value": "3", "Label": "With some difficulty" },
+				{ "Value": "2", "Label": "With much difficulty" },
+				{ "Value": "1", "Label": "Unable to do" }
+			]
+		},
+		{
+			"Name": "PROMIS Never-Sometimes-Always",
+			"Data":
+			[
+				{ "Value": "1", "Label": "Never" },
+				{ "Value": "2", "Label": "Rarely" },
+				{ "Value": "3", "Label": "Sometimes" },
+				{ "Value": "4", "Label": "Often" },
+				{ "Value": "5", "Label": "Always" }
+			]
+		},
+		{
+			"Name": "PROMIS NotAtAll-VeryMuch",
+			"Data":
+			[
+				{ "Value": "1", "Label": "Not at all" },
+				{ "Value": "2", "Label": "A little bit" },
+				{ "Value": "3", "Label": "Somewhat" },
+				{ "Value": "4", "Label": "Quite a bit" },
+				{ "Value": "5", "Label": "Very much" }
+			]
+		}
+	],
+	"Items": [
+		{
+			"Section": "PROMIS-29 Profile v2.0",
+			"Items": [
+
+				{
+					"HeaderItem":
+						{
+							"TagName": "span",
+							"DisplayLabel": "<label class=\"control-label\">The next set of questions will ask about your physical functioning.<br>Please respond to each item by marking one box per row.</label>",
+							"__ClassName": "DisplayItem"
+						},
+					"Items": [
+						{
+							"Section": "Physical Function",
+							"HeaderItem":
+								{
+									"TagName": "span",
+									"DisplayLabel": "&nbsp;",
+									"__ClassName": "DisplayItem"
+								},
+							"CategorizationName": "PROMIS WithoutDifficulty-Unable",
+							"Items":
+							[
+								{
+									"CombineHtmlForGroup": 1,
+									"Items":
+									[
+										{
+											"VarName": "PFA11",
+											"DisplayLabel": "Are you able to do chores such as vacuuming or yard work?",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										},
+										{
+											"VarName": "PFA21",
+											"DisplayLabel": "Are you able to go up and down stairs at a normal pace?",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										},
+										{
+											"VarName": "PFA23",
+											"DisplayLabel": "Are you able to go for a walk of at least 15 minutes?",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										},
+										{
+											"VarName": "PFA53",
+											"DisplayLabel": "Are you able to run errands and shop?",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										}
+									],
+									"__ClassName": "ItemGroup"
+								}
+							],
+							"__ClassName": "LikertGroup"
+						}
+					],
+					"__ClassName": "ItemGroup"
+				},
+
+				{
+					"HeaderItem":
+						{
+							"TagName": "span",
+							"DisplayLabel": "<label class=\"control-label\">The next set of questions will ask about your feelings in the <span style=\"text-decoration: underline;\">past 7 days</span>.<br>Please respond to each item by marking one box per row.</label>",
+							"__ClassName": "DisplayItem"
+						},
+					"Items": [
+						{
+							"Section": "Anxiety",
+							"HeaderItem":
+								{
+									"TagName": "span",
+									"DisplayLabel": "<label class=\"control-label\">In the past 7 days...</label>",
+									"__ClassName": "DisplayItem"
+								},
+							"CategorizationName": "PROMIS Never-Sometimes-Always",
+							"Items":
+							[
+								{
+									"CombineHtmlForGroup": 1,
+									"Items":
+									[
+										{
+											"VarName": "EDANX01",
+											"DisplayLabel": "I felt fearful",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										},
+										{
+											"VarName": "EDANX40",
+											"DisplayLabel": "I found it hard to focus on anything other than my anxiety",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										},
+										{
+											"VarName": "EDANX41",
+											"DisplayLabel": "My worries overwhelmed me",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										},
+										{
+											"VarName": "EDANX53",
+											"DisplayLabel": "I felt uneasy",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										}
+									],
+									"__ClassName": "ItemGroup"
+								}
+							],
+							"__ClassName": "LikertGroup"
+						}
+					],
+					"__ClassName": "ItemGroup"
+				},
+
+				{
+					"Section": "Depression",
+					"HeaderItem":
+						{
+							"TagName": "span",
+							"DisplayLabel": "<label class=\"control-label\">In the past 7 days...</label>",
+							"__ClassName": "DisplayItem"
+						},
+					"CategorizationName": "PROMIS Never-Sometimes-Always",
+					"Items":
+					[
+						{
+							"CombineHtmlForGroup": 1,
+							"Items":
+							[
+								{
+									"VarName": "EDDEP04",
+									"DisplayLabel": "I felt worthless",
+									"IsRequired": 1,
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "EDDEP06",
+									"DisplayLabel": "I felt helpless",
+									"IsRequired": 1,
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "EDDEP29",
+									"DisplayLabel": "I felt depressed",
+									"IsRequired": 1,
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "EDDEP41",
+									"DisplayLabel": "I felt hopeless",
+									"IsRequired": 1,
+									"__ClassName": "LikertRadioResponse"
+								}
+							],
+							"__ClassName": "ItemGroup"
+						}
+					],
+					"__ClassName": "LikertGroup"
+				},
+
+
+				{
+					"HeaderItem":
+						{
+							"TagName": "span",
+							"DisplayLabel": "<label class=\"control-label\">The next set of questions will ask about fatigue and its effect on you in the <span style=\"text-decoration: underline;\">past 7 days</span>.<br>Please respond to each item by marking one box per row.</label>",
+							"__ClassName": "DisplayItem"
+						},
+					"Items": [
+						{
+							"Section": "Fatigue",
+							"HeaderItem":
+								{
+									"TagName": "span",
+									"DisplayLabel": "<label class=\"control-label\">During the past 7 days</label>",
+									"__ClassName": "DisplayItem"
+								},
+							"CategorizationName": "PROMIS NotAtAll-VeryMuch",
+							"Items":
+							[
+								{
+									"CombineHtmlForGroup": 1,
+									"Items":
+									[
+										{
+											"VarName": "HI7",
+											"DisplayLabel": "I feel fatigued",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										},
+										{
+											"VarName": "AN3",
+											"DisplayLabel": "I have trouble <span style=\"text-decoration: underline;\">starting</span> things because I am tired",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										},
+										{
+											"VarName": "FATEXP41",
+											"DisplayLabel": "How run-down did you feel on average?",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										},
+										{
+											"VarName": "FATEXP40",
+											"DisplayLabel": "How fatigued were you on average?",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										}
+									],
+									"__ClassName": "ItemGroup"
+								}
+							],
+							"__ClassName": "LikertGroup"
+						}
+					],
+					"__ClassName": "ItemGroup"
+				},
+
+				{
+					"HeaderItem":
+						{
+							"TagName": "span",
+							"DisplayLabel": "<label class=\"control-label\">The next set of questions will ask about pain and its effect on you in the <span style=\"text-decoration: underline;\">past 7 days</span>.<br>Please respond to each item (even if you do not experience pain) by marking one box per row.</label>",
+							"__ClassName": "DisplayItem"
+						},
+					"Items": [
+						{
+							"Section": "Pain Interference",
+							"HeaderItem":
+								{
+									"TagName": "span",
+									"DisplayLabel": "<label class=\"control-label\">In the past 7 days...</label>",
+									"__ClassName": "DisplayItem"
+								},
+							"CategorizationName": "PROMIS NotAtAll-VeryMuch",
+							"Items":
+							[
+								{
+									"CombineHtmlForGroup": 1,
+									"Items":
+									[
+										{
+											"VarName": "PAININ9",
+											"DisplayLabel": "How much did pain interfere with your day to day activities?",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										},
+										{
+											"VarName": "PAININ22",
+											"DisplayLabel": "How much did pain interfere with work around the home?",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										},
+										{
+											"VarName": "PAININ31",
+											"DisplayLabel": "How much did pain interfere with your ability to participate in social activities?",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										},
+										{
+											"VarName": "PAININ34",
+											"DisplayLabel": "How much did pain interfere with your household chores?",
+											"IsRequired": 1,
+											"__ClassName": "LikertRadioResponse"
+										}
+									],
+									"__ClassName": "ItemGroup"
+								}
+							],
+							"__ClassName": "LikertGroup"
+						}
+					],
+					"__ClassName": "ItemGroup"
+				},
+
+				{
+					"Section": "Pain Intensity",
+					"CombineHtmlForGroup": 1,
+					"ShowOptionsBelow": true,
+					"HeaderItem":
+						{
+							"TagName": "span",
+							"DisplayLabel": "<label class=\"control-label\">In the past 7 days...</label>",
+							"__ClassName": "DisplayItem"
+						},
+					"CategorizationData": [
+						{ "Value": "0", "Label": "0 <br>No <br>Pain" },
+						{ "Value": "1", "Label": "1" },
+						{ "Value": "2", "Label": "2" },
+						{ "Value": "3", "Label": "3" },
+						{ "Value": "4", "Label": "4" },
+						{ "Value": "5", "Label": "5" },
+						{ "Value": "6", "Label": "6" },
+						{ "Value": "7", "Label": "7" },
+						{ "Value": "8", "Label": "8" },
+						{ "Value": "9", "Label": "9" },
+						{ "Value": "10", "Label": "10 <br>Worst <br>imaginable <br>pain" }
+					],
+					"Items":
+					[
+						{
+							"VarName": "Global07",
+							"DisplayLabel": "How would you rate your pain on average?",
+							"VarLabel": "Pain intensity, PROMIS Global07",
+							"IsRequired": 1,
+							"__ClassName": "LikertRadioResponse"
+						}
+					],
+					"__ClassName": "LikertGroup"
+				}
+
+				
+			],
+			"__ClassName": "ItemGroup"
+		}
+	],
+	"__ClassName": "RootGroup"
+}

@@ -1,0 +1,215 @@
+{
+	"NamedCategorizations":
+	[
+		{
+			"Name": "PROMIS WithoutDifficulty-Unable",
+			"Data":
+			[
+				{ "Value": "5", "Label": "Without any difficulty" },
+				{ "Value": "4", "Label": "With a little difficulty" },
+				{ "Value": "3", "Label": "With some difficulty" },
+				{ "Value": "2", "Label": "With much difficulty" },
+				{ "Value": "1", "Label": "Unable to do" }
+			]
+		},
+		{
+			"Name": "PROMIS NotAtAll-CannotDo",
+			"Data":
+			[
+				{ "Value": "5", "Label": "Not at all" },
+				{ "Value": "4", "Label": "Very little" },
+				{ "Value": "3", "Label": "Somewhat" },
+				{ "Value": "2", "Label": "Quite a lot" },
+				{ "Value": "1", "Label": "Cannot do" }
+			]
+		}
+	],
+	"Items": [
+		{
+			"__ClassName": "ItemGroup",
+			"Section": "PROMIS Physical Function SF-20a v1.0",
+			"Items": [
+				{
+					"Items": [
+						{
+							"CategorizationName": "PROMIS WithoutDifficulty-Unable",
+							"Items": [
+								{
+									"VarName": "PFA11",
+									"IsRequired": 1,
+									"DisplayLabel": "Are you able to do chores such as vacuuming or yard work?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "PFA12",
+									"IsRequired": 1,
+									"DisplayLabel": "Are you able to push open a heavy door?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "PFA16",
+									"IsRequired": 1,
+									"DisplayLabel": "Are you able to dress yourself, including tying shoelaces and doing buttons?",
+									"__ClassName": "LikertRadioResponse"
+								}
+							],
+							"CombineHtmlForGroup": 1,
+							"__ClassName": "LikertGroup"
+						},
+						{
+							"CategorizationName": "PROMIS WithoutDifficulty-Unable",
+							"Items": [
+								{
+									"VarName": "PFA34",
+									"IsRequired": 1,
+									"DisplayLabel": "Are you able to wash your back?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "PFA38",
+									"IsRequired": 1,
+									"DisplayLabel": "Are you able to dry your back with a towel?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "PFA51",
+									"IsRequired": 1,
+									"DisplayLabel": "Are you able to sit on the edge of a bed?",
+									"__ClassName": "LikertRadioResponse"
+								}
+							],
+							"CombineHtmlForGroup": 1,
+							"__ClassName": "LikertGroup"
+						},
+						{
+							"CategorizationName": "PROMIS WithoutDifficulty-Unable",
+							"Items": [
+								{
+									"VarName": "PFA55",
+									"IsRequired": 1,
+									"DisplayLabel": "Are you able to wash and dry your body?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "PFA56",
+									"IsRequired": 1,
+									"DisplayLabel": "Are you able to get in and out of a car?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "PFB19",
+									"IsRequired": 1,
+									"DisplayLabel": "Are you able to squeeze a new tube of toothpaste?",
+									"__ClassName": "LikertRadioResponse"
+								}
+							],
+							"CombineHtmlForGroup": 1,
+							"__ClassName": "LikertGroup"
+						},
+						{
+							"CategorizationName": "PROMIS WithoutDifficulty-Unable",
+							"Items": [
+								{
+									"VarName": "PFB22",
+									"IsRequired": 1,
+									"DisplayLabel": "Are you able to hold a plate full of food?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "PFB24",
+									"IsRequired": 1,
+									"DisplayLabel": "Are you able to run a short distance, such as to catch a bus?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "PFB26",
+									"IsRequired": 1,
+									"DisplayLabel": "Are you able to shampoo your hair?",
+									"__ClassName": "LikertRadioResponse"
+								}
+							],
+							"CombineHtmlForGroup": 1,
+							"__ClassName": "LikertGroup"
+						},
+						{
+							"CategorizationName": "PROMIS WithoutDifficulty-Unable",
+							"Items": [
+								{
+									"VarName": "PFC45",
+									"IsRequired": 1,
+									"DisplayLabel": "Are you able to get on and off the toilet?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "PFC46",
+									"IsRequired": 1,
+									"DisplayLabel": "Are you able to transfer from a bed to a chair and back?",
+									"__ClassName": "LikertRadioResponse"
+								}
+							],
+							"CombineHtmlForGroup": 1,
+							"__ClassName": "LikertGroup"
+						}
+					],
+					"__ClassName": "ItemGroup"
+				},
+				{
+					"Items": [
+						{
+							"CategorizationName": "PROMIS NotAtAll-CannotDo",
+							"Items": [
+								{
+									"VarName": "PFA1",
+									"IsRequired": 1,
+									"DisplayLabel": "Does your health now limit you in doing vigorous activities, such as running, lifting heavy objects, participating in strenuous sports?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "PFA3",
+									"IsRequired": 1,
+									"DisplayLabel": "Does your health now limit you in bending, kneeling, or stooping?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "PFA5",
+									"IsRequired": 1,
+									"DisplayLabel": "Does your health now limit you in lifting or carrying groceries?",
+									"__ClassName": "LikertRadioResponse"
+								}
+							],
+							"CombineHtmlForGroup": 1,
+							"__ClassName": "LikertGroup"
+						},
+						{
+							"CategorizationName": "PROMIS NotAtAll-CannotDo",
+							"Items": [
+								{
+									"VarName": "PFC12",
+									"IsRequired": 1,
+									"DisplayLabel": "Does your health now limit you in doing two hours of physical labor?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "PFC36",
+									"IsRequired": 1,
+									"DisplayLabel": "Does your health now limit you in walking more than a mile?",
+									"__ClassName": "LikertRadioResponse"
+								},
+								{
+									"VarName": "PFC37",
+									"IsRequired": 1,
+									"DisplayLabel": "Does your health now limit you in climbing one flight of stairs?",
+									"__ClassName": "LikertRadioResponse"
+								}
+							],
+							"CombineHtmlForGroup": 1,
+							"__ClassName": "LikertGroup"
+						}
+					],
+					"__ClassName": "ItemGroup"
+				}
+			]
+		}
+	],
+	"__ClassName": "RootGroup"
+}

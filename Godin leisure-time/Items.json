@@ -1,0 +1,70 @@
+{
+	"NamedCategorizations":
+	[
+	],
+	"Items": [
+		{
+			"__ClassName": "ItemGroup",
+			"CombineHtmlForGroup": 1,
+			"Section": "Godin Leisure-Time",
+			"Items": [
+				{
+					"DisplayLabel": "<label class=\"control-label\">\"For the following four questions, I am going to ask you about your overall exercise habits throughout the past 7 days.\"<\/label>\r\n<br><br>",
+					"TagName": "span",
+					"__ClassName": "DisplayItem"
+				},
+				{
+					"DisplayLabel": "<label class=\"control-label\">\"During the <b><i>last 7-day period<\/i><\/b> (a week), how many times did you do the following kinds of exercise for more than 15 minutes during your free time? This question asks about three types of exercise: strenuous, moderate, and mild.\"<br><br>-\"For strenuous exercise: You should feel your heart beating rapidly and includes activities such as <i>running, jogging, football, soccer, squash, basketball, vigorous swimming, and vigorous long distance bicycling<\/i>. How many times did you do these types of activities for more than 15 minutes?\"<\/label>\r\n<br><br>",
+					"TagName": "span",
+					"__ClassName": "DisplayItem"
+				},
+				{
+					"__ClassName": "TextResponse",
+					"VarName": "GLTE_Strenuous",
+					"VarLabel": "Godin Leisure-Time Exercise - Strenuous",
+					"DataCategory": "Numeric",
+					"DataPrecision": 2,
+					"DisplayLabel": "Average times per week"
+				},
+				{
+					"DisplayLabel": "<label class=\"control-label\">-\"For moderate exercise: This is exercise that is more than minimal effort, but not exhausting. This includes activities such as fast <i>walking, baseball, tennis, easy bicycling, volleyball, badminton, easy swimming<\/i>. How many times did you do these types of activities for more than 15 minutes?\"<\/label>\r\n<br><br>",
+					"TagName": "span",
+					"__ClassName": "DisplayItem"
+				},
+				{
+					"__ClassName": "TextResponse",
+					"VarName": "GLTE_Moderate",
+					"VarLabel": "Godin Leisure-Time Exercise - Moderate",
+					"DataCategory": "Numeric",
+					"DataPrecision": 2,
+					"DisplayLabel": "Average times per week"
+				},
+				{
+					"DisplayLabel": "<label class=\"control-label\">-\"For mild exercise: This is exercise that is minimal effort and includes activities such as <i>yoga, archery, fishing from river bank, bowling, horseshoes, golf, and easy walking<\/i>. How many times did you do these types of activities for more than 15 minutes?\"<\/label>\r\n<br><br>",
+					"TagName": "span",
+					"__ClassName": "DisplayItem"
+				},
+				{
+					"__ClassName": "TextResponse",
+					"VarName": "GLTE_Mild",
+					"VarLabel": "Godin Leisure-Time Exercise - Mild",
+					"DataCategory": "Numeric",
+					"DataPrecision": 2,
+					"DisplayLabel": "Average times per week"
+				},
+				{
+					"__ClassName": "RadioResponse",
+					"VarName": "GLTE_Activity",
+					"VarLabel": "Godin Leisure-Time Exercise - How often regular activity",
+					"DisplayLabel": "During the last 7-Day period (a week), how often did you engage in any physical activity <b>long enough to work up a sweat<\/b> (where you should feel your heart beating rapidly)? This may include activities that are work related, recreational, at home, or as part of an exercise program.",
+					"CategorizationData": [
+						{ "Value": "1", "Label": "Often" },
+						{ "Value": "2", "Label": "Sometimes" },
+						{ "Value": "3", "Label": "Rarely" }
+					]
+				}
+			]
+		}
+	],
+	"__ClassName": "RootGroup"
+}

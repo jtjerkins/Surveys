@@ -1,0 +1,28 @@
+{
+	"NamedCategorizations":
+	[
+	],
+	"Items": [
+		{
+			"Section": "ECOG",
+			"Items": [
+				{
+					"VarName": "ECOG",
+					"DisplayLabel": "Please indicate which statement best describes your current activity level.",
+					"AdvanceOnClick": true,
+					"VarLabel": "ECOG",
+					"CategorizationData": [
+						{ "Value": "0", "Label": "Normal activity, without symptoms" },
+						{ "Value": "1", "Label": "Some symptoms, but do not require bed rest during waking day" },
+						{ "Value": "2", "Label": "Require bed rest for less than 50% of waking day" },
+						{ "Value": "3", "Label": "Require bed rest for more than 50% of waking day" },
+						{ "Value": "4", "Label": "Unable to get out of bed" }
+					],
+					"__ClassName": "ButtonResponse"
+				}
+			],
+			"__ClassName": "ItemGroup"
+		}
+	],
+	"__ClassName": "RootGroup"
+}
