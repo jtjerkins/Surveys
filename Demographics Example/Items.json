@@ -1,0 +1,258 @@
+{
+	"NamedCategorizations": [
+	],
+	"Items": [
+		{
+			"__ClassName": "ItemGroup",
+			"Section": "Demographics",
+			"Items": [
+				{
+					"Items": [
+						{
+							"DisplayLabel": "<label class=\"control-label\">Which category best describes your race? (Select all that apply)<\/label>",
+							"TagName": "span",
+							"__ClassName": "DisplayItem"
+						},
+						{
+							"VarName": "RaceWhite",
+							"VarLabel": "Race (White)",
+							"Protection": 1,
+							"DisplayLabel": "White",
+							"__ClassName": "CheckboxResponse"
+						},
+						{
+							"VarName": "RaceBlack",
+							"VarLabel": "Race (Black or African American)",
+							"Protection": 1,
+							"DisplayLabel": "Black or African American",
+							"__ClassName": "CheckboxResponse"
+						},
+						{
+							"VarName": "RaceAsian",
+							"VarLabel": "Race (Asian)",
+							"Protection": 1,
+							"DisplayLabel": "Asian",
+							"__ClassName": "CheckboxResponse"
+						},
+						{
+							"VarName": "RacePacific",
+							"VarLabel": "Race (Native Hawaiian or Other Pacific Islander)",
+							"Protection": 1,
+							"DisplayLabel": "Native Hawaiian or Other Pacific Islander",
+							"__ClassName": "CheckboxResponse"
+						},
+						{
+							"VarName": "RaceAmIn",
+							"VarLabel": "Race (American Indian or Alaska Native)",
+							"Protection": 1,
+							"DisplayLabel": "American Indian or Alaska Native",
+							"__ClassName": "CheckboxResponse"
+						},
+						{
+							"VarName": "RaceOther",
+							"VarLabel": "Race (Other)",
+							"Protection": 1,
+							"DisplayLabel": "Other. Specify:",
+							"__ClassName": "CheckboxResponse"
+						},
+						{
+							"VarName": "RaceOtherSpecify",
+							"VarLabel": "Race, Other-specify",
+							"Protection": 1,
+							"DisplayLabel": "",
+							"ValidMissing": [
+								{
+									"VarName": "RaceOther",
+									"Operator": "!=",
+									"VarValue": "1"
+								}
+							],
+							"__ClassName": "TextResponse"
+						}
+					],
+					"CombineHtmlForGroup": 1,
+					"QuestionNumber": "1.",
+					"__ClassName": "ItemGroup"
+				},
+				{
+					"CategorizationData": [
+						{
+							"Value": "1",
+							"Label": "Hispanic or Latino"
+						},
+						{
+							"Value": "2",
+							"Label": "Non-Hispanic"
+						}
+					],
+					"VarName": "Ethnicity",
+					"QuestionNumber": "2.",
+					"Protection": 1,
+					"DisplayLabel": "With which ethnicity do you identify?",
+					"__ClassName": "RadioResponse"
+				},
+				{
+					"CategorizationData": [
+						{
+							"Value": "1",
+							"Label": "1st-8th grades"
+						},
+						{
+							"Value": "2",
+							"Label": "9th-11th grades"
+						},
+						{
+							"Value": "3",
+							"Label": "High school graduate\/GED"
+						},
+						{
+							"Value": "4",
+							"Label": "College Degree (B.A\/B.S)"
+						},
+						{
+							"Value": "5",
+							"Label": "Advanced Degree (MA, PhD, etc.)"
+						},
+						{
+							"Value": "6",
+							"Label": "Prefer not to say"
+						}
+					],
+					"VarName": "Education",
+					"QuestionNumber": "3.",
+					"DisplayLabel": "What is the highest level of school <span style=\"text-decoration: underline;\">completed<\/span> or the highest degree you have <span style=\"text-decoration: underline;\">received<\/span>?",
+					"__ClassName": "RadioResponse"
+				},
+				{
+					"CategorizationData": [
+						{
+							"Value": "1",
+							"Label": "&lt;$20,000 annually"
+						},
+						{
+							"Value": "2",
+							"Label": "$20,001 \u2013 40,000"
+						},
+						{
+							"Value": "3",
+							"Label": "$40,001 \u2013 60,000"
+						},
+						{
+							"Value": "4",
+							"Label": "$60,001 \u2013 80,000"
+						},
+						{
+							"Value": "5",
+							"Label": "$80,001 \u2013 100,000"
+						},
+						{
+							"Value": "6",
+							"Label": "&gt;$100,000"
+						},
+						{
+							"Value": "7",
+							"Label": "Prefer not to say"
+						}
+					],
+					"VarName": "HouseholdIncome",
+					"QuestionNumber": "4.",
+					"DisplayLabel": "Which of the following categories best describes your total household income, before taxes, in the year prior <span style=\"font-style: italic;\">to your current hospital admission<\/span>?",
+					"__ClassName": "RadioResponse"
+				},
+				{
+					"CategorizationData": [
+						{
+							"Value": "1",
+							"Label": "Single, never married"
+						},
+						{
+							"Value": "2",
+							"Label": "Married\/partnered"
+						},
+						{
+							"Value": "3",
+							"Label": "Separated"
+						},
+						{
+							"Value": "4",
+							"Label": "Divorced"
+						},
+						{
+							"Value": "5",
+							"Label": "Widowed"
+						},
+						{
+							"Value": "6",
+							"Label": "Prefer not to say"
+						}
+					],
+					"VarName": "MaritalStatus",
+					"QuestionNumber": "5.",
+					"DisplayLabel": "Which of the follow best describes your current marital status?",
+					"__ClassName": "RadioResponse"
+				},
+				{
+					"CategorizationData": [
+						{
+							"Value": "1",
+							"Label": "Yes"
+						},
+						{
+							"Value": "2",
+							"Label": "No"
+						},
+						{
+							"Value": "3",
+							"Label": "Prefer not to say"
+						}
+					],
+					"VarName": "LivingWithPerson",
+					"QuestionNumber": "6.",
+					"DisplayLabel": "Were you living with another person <span style=\"font-style: italic;\">prior to your current hospital admission<\/span>?",
+					"__ClassName": "RadioResponse"
+				},
+				{
+					"CategorizationData": [
+						{
+							"Value": "1",
+							"Label": "Yes"
+						},
+						{
+							"Value": "2",
+							"Label": "No"
+						},
+						{
+							"Value": "3",
+							"Label": "Prefer not to say"
+						}
+					],
+					"VarName": "Employmt",
+					"QuestionNumber": "7.",
+					"DisplayLabel": "Were you employed <span style=\"font-style: italic;\">prior to your current hospital admission<\/span>?",
+					"__ClassName": "RadioResponse"
+				},
+				{
+					"CategorizationData": [
+						{
+							"Value": "1",
+							"Label": "Yes"
+						},
+						{
+							"Value": "2",
+							"Label": "No"
+						},
+						{
+							"Value": "3",
+							"Label": "Prefer not to say"
+						}
+					],
+					"VarName": "Insurance",
+					"QuestionNumber": "8.",
+					"DisplayLabel": "Do you CURRENTLY have insurance coverage?",
+					"__ClassName": "RadioResponse"
+				}				
+			]
+		}
+	],
+	"__ClassName": "RootGroup"
+}
